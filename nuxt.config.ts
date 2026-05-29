@@ -27,6 +27,18 @@ export default defineNuxtConfig({
     '@nuxt/content',
     'nuxt-feedme'
   ],
+  nitro: {
+    prerender: {
+      // Render every page to static HTML at build time. @nuxt/content's
+      // production SQLite DB can't be queried in Vercel's read-only
+      // serverless filesystem, so a runtime queryCollection() returns an
+      // empty post list. Prerendering uses the local DB at build time and
+      // serves static HTML from the CDN, sidestepping that entirely.
+      // crawlLinks follows the homepage's <NuxtLink>s to prerender each post.
+      routes: ['/'],
+      crawlLinks: true
+    }
+  },
   content: {
     build: {
       markdown: {

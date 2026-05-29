@@ -49,7 +49,7 @@ export default defineNuxtConfig({
           theme: 'vitesse-dark',
           langs: [
             'ts', 'js', 'bash', 'shell', 'json', 'vue',
-            'html', 'css', 'markdown', 'diff', 'yaml'
+            'html', 'css', 'markdown', 'diff', 'yaml', 'python', 'rust'
           ]
         }
       }

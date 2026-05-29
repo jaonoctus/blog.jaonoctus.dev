@@ -269,6 +269,9 @@ a:hover {
   margin: 1.6rem auto;
   border: 1px solid var(--border);
   border-radius: 8px;
+  /* default white backdrop so transparent artwork (icons, logos) stays visible
+     on the dark theme */
+  background: #ffffff;
 }
 /* an italic line on its own right after an image reads as a caption */
 .prose img + em,
@@ -284,6 +287,10 @@ a:hover {
 }
 
 .prose a { text-decoration: underline; text-underline-offset: 3px; }
+
+/* footnote reference markers + their targets at the bottom */
+.prose sup { line-height: 0; }
+.prose [id^="fn-"] { scroll-margin-top: 2rem; }
 
 @media (max-width: 600px) {
   html, body { font-size: 16px; }

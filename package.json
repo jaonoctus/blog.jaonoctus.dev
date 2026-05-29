@@ -1,0 +1,22 @@
+{
+  "name": "blog-jaonoctus-dev",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/content": "3.14.0",
+    "@nuxt/eslint": "1.15.2",
+    "better-sqlite3": "12.10.0",
+    "eslint": "10.4.0",
+    "nuxt": "^4.4.6",
+    "nuxt-feedme": "2.1.0",
+    "vue": "^3.5.34",
+    "vue-router": "^5.0.7"
+  }
+}

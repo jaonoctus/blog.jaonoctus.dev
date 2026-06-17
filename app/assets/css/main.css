@@ -11,7 +11,7 @@
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", "Cascadia Code", Menlo, Consolas, monospace;
 
-  --measure: 42rem;
+  --measure: 48rem;
 
   color-scheme: dark;
 }
@@ -259,6 +259,32 @@ a:hover {
   border: 0;
   border-top: 1px solid var(--border);
   margin: 2.5rem 0;
+}
+
+/* tables */
+.prose table {
+  width: 100%;
+  margin: 1.6rem 0;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  display: block;
+  overflow-x: auto;
+}
+.prose thead th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-strong);
+  background: var(--bg-soft);
+  border-bottom: 1px solid var(--border);
+}
+.prose th,
+.prose td {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--border);
+  vertical-align: top;
+}
+.prose tbody tr:nth-child(even) td {
+  background: var(--bg-soft);
 }
 
 /* images + captions */

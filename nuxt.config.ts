@@ -12,6 +12,10 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: 'en' },
+      // Default every link on every page to open in a new tab. A <base> with
+      // only `target` (no `href`) sets the default browsing context for all
+      // hyperlinks without changing relative-URL resolution.
+      base: { target: '_blank' },
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'theme-color', content: '#000000' }

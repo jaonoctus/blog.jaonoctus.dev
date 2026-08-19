@@ -7,6 +7,7 @@
   --text-strong: #ffffff;
   --muted: #808080;
   --border: #262626;
+  --love: #ff5555;
 
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", "Cascadia Code", Menlo, Consolas, monospace;
@@ -94,11 +95,27 @@ a:hover {
   flex-direction: column;
   gap: 0.45rem;
   align-items: flex-start;
-  border-top: 1px solid var(--border);
+  border-top: 1px dotted var(--border);
   padding: 1.75rem 0 2.5rem;
   font-family: var(--font-mono);
   font-size: 0.78rem;
   color: var(--muted);
+}
+.footer-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+.footer-sep {
+  opacity: 0.6;
+}
+.site-footer .footer-name {
+  color: var(--text-strong);
+  font-weight: 700;
+}
+.footer-love {
+  color: var(--love);
 }
 .site-footer a {
   color: var(--muted);
